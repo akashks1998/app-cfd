@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Tab View Template</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="main.js"></script>
+    <link href="animate.css"  rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body  onload="myload()">
+    
+    <div id="all">
+        <div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="setting.html">Setting</a>
+  </div>
+</div>
+        <div id="score">
+    Score<br/>0
+    </div>
+        <div id="main">
+            <div id="q"></div>
+            <div id="0" class="ans" onclick="check(0)"></div>
+            <div id="1" class="ans" onclick="check(1)"></div>
+            <div id="2" class="ans" onclick="check(2)"></div>
+            <div id="3" class="ans" onclick="check(3)"></div>
+
+        </div>
+    
+    </div>
+    <audio loop>
+  <source src="music.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio> 
+</body>
+
+</html>
